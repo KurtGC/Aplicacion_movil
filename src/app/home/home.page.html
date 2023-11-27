@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="azul">
+    <ion-title >
+      Inicio Sesion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+ <ion-img src="assets/images/home.svg"></ion-img>
+
+
+
+<ion-item class="ion-margin-top">
+  <ion-label position ="floating">Usuario</ion-label>
+  <ion-input type="text" [(ngModel)]="modeloUsuario" ></ion-input>
+</ion-item>
+
+<ion-item class="ion-margin-top">
+  <ion-label position ="floating">Contraseña</ion-label>
+  <ion-input type="text" [(ngModel)]="modeloContrasena" ></ion-input>
+</ion-item>
+
+<ion-button (click)="validarInicio()"  class="ion-margin-top" expand="block">Ingresar</ion-button>
+<ion-button (click)="mostrarFormulario()"  class="ion-margin-top blanco" expand="block" fill="outline">Nuevo Usuario</ion-button>
+
+
+
+</ion-content>
