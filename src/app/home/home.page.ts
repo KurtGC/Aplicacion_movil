@@ -33,7 +33,7 @@ export class HomePage implements OnInit{
       {
       name:'correo',
       type:'text',
-      placeholder:'Correo Elctronico'
+      placeholder:'usuario'
       },
      {
       name:'contrasena',
