@@ -14,7 +14,10 @@
     </ion-avatar>
     <ion-label>Perfil</ion-label>
   </ion-item>
-
+ <div>
+  <ion-button (clik)="takePicture()">Tomar Foto</ion-button>
+  <img sglf="imageSource" src="{{imageSource}}" alt="image" style="width: 100%;">
+ </div>
 
   <ion-list>
 
@@ -36,10 +39,11 @@
 
   <ion-item  class="ion-margin-top">
     <ion-input label="Email" type="email" placeholder="email@domain.com"></ion-input>
-  </ion-item  class="ion-margin-top">
+  </ion-item>
   <ion-item  class="ion-margin-top">
     <ion-input label="Telefono " type="tel" placeholder="888-888-8888"></ion-input>
   </ion-item>
+  
 </ion-list>
 
 </ion-content>
